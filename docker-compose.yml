@@ -1,0 +1,55 @@
+services:
+  db:
+    image: postgis/postgis:16-3.4
+    container_name: glacioguard-postgis
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-glacioguard}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-glacioguard_secret}
+      POSTGRES_DB: ${POSTGRES_DB:-glacioguard}
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/01_init.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-glacioguard} -d ${POSTGRES_DB:-glacioguard}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: glacioguard-backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      GG_DATABASE_URL: postgresql+psycopg2://${POSTGRES_USER:-glacioguard}:${POSTGRES_PASSWORD:-glacioguard_secret}@db:5432/${POSTGRES_DB:-glacioguard}
+      GG_DATA_DIR: /app/data
+      GG_GEE_PROJECT: ${GG_GEE_PROJECT:-}
+      GG_GEE_SERVICE_ACCOUNT: ${GG_GEE_SERVICE_ACCOUNT:-}
+      GG_GEE_PRIVATE_KEY_FILE: ${GG_GEE_PRIVATE_KEY_FILE:-}
+      GG_CORS_ORIGINS: http://localhost:5173,http://localhost:8080
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: glacioguard-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
+
+volumes:
+  pgdata:
+

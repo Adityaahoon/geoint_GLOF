@@ -1,0 +1,5 @@
+Flood Stage,Date Window,Scenes Used,Corridor Valid %,Observed Wet Area (ha),Coverage-Normalized Wet Area (ha),Mean Corridor Index,90th-Pct Water Index,Key Scene Acquisitions
+1. Pre-Flood (May 2013),2013-05-01 to 2013-05-31,5,34.6%,7.3,21.1,-0.3788,-0.2264,"2013-05-21 (LANDSAT7), 2013-05-29 (LANDSAT8), 2013-05-13 (LANDSAT8)"
+2. During / Immediate Flood (June 2013),2013-06-05 to 2013-06-30,5,35.5%,2.8,7.9,-0.2837,-0.1189,"2013-06-30 (LANDSAT8), 2013-06-22 (LANDSAT7), 2013-06-30 (LANDSAT8)"
+3. Peak Monsoon High-Flow (July–Aug 2013),2013-07-01 to 2013-08-31,5,33.5%,76.3,228.0,-0.1023,+0.4550,"2013-08-01 (LANDSAT8), 2013-08-25 (LANDSAT7), 2013-08-26 (LANDSAT8)"
+4. Post-Flood Recession (Sept–Nov 2013),2013-09-15 to 2013-11-25,6,71.6%,15.2,21.2,-0.3496,-0.1256,"2013-09-18 (LANDSAT8), 2013-11-21 (LANDSAT8), 2013-09-18 (LANDSAT8)"

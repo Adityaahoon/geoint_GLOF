@@ -1,0 +1,38 @@
+# GlacioGuard AI — Python Backend & Geospatial Intelligence Dependencies
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+pydantic>=2.9.0
+pydantic-settings>=2.6.0
+sqlalchemy>=2.0.35
+geoalchemy2>=0.15.2
+psycopg2-binary>=2.9.9
+python-multipart>=0.0.12
+httpx>=0.27.2
+
+# Geospatial & Remote Sensing
+numpy>=2.0.0
+scipy>=1.14.0
+rasterio>=1.4.0
+shapely>=2.0.6
+pyproj>=3.7.0
+geopandas>=1.0.1
+xarray>=2024.9.0
+rioxarray>=0.17.0
+pystac-client>=0.8.3
+planetary-computer>=1.0.0
+earthengine-api>=1.1.0
+
+# Deep Learning & Computer Vision
+torch>=2.4.0
+torchvision>=0.19.0
+opencv-python-headless>=4.10.0
+albumentations>=1.4.18
+pillow>=10.4.0
+
+# Machine Learning & Scientific Visualization / Reporting
+scikit-learn>=1.5.2
+xgboost>=2.1.1
+matplotlib>=3.9.2
+reportlab>=4.2.5
+pytest>=8.3.3
+

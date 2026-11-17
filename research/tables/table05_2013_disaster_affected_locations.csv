@@ -1,0 +1,6 @@
+Location,Category,Lat (°N),Lon (°E),Mean ΔNDVI (240m),Mean ΔNBR (240m),Observed Change Interpretation
+Chorabari Lake (Gandhi Sarovar),lake,30.747,79.058,0.0976,0.0071,"Mean ΔNDVI = +0.098, ΔNBR = +0.007 within ~240 m radius (negative values indicate vegetation stripping / fresh sediment or debris deposition)."
+Kedarnath,settlement,30.7346,79.0669,-0.1785,-0.1939,"Mean ΔNDVI = -0.179, ΔNBR = -0.194 within ~240 m radius (negative values indicate vegetation stripping / fresh sediment or debris deposition)."
+Rambara (pre-2013 location),settlement,30.708,79.049,-0.0331,-0.1465,"Mean ΔNDVI = -0.033, ΔNBR = -0.146 within ~240 m radius (negative values indicate vegetation stripping / fresh sediment or debris deposition)."
+Gaurikund,settlement,30.653,79.026,-0.0415,-0.1172,"Mean ΔNDVI = -0.041, ΔNBR = -0.117 within ~240 m radius (negative values indicate vegetation stripping / fresh sediment or debris deposition)."
+Sonprayag,settlement,30.633,78.999,-0.0957,-0.1686,"Mean ΔNDVI = -0.096, ΔNBR = -0.169 within ~240 m radius (negative values indicate vegetation stripping / fresh sediment or debris deposition)."

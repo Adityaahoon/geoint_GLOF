@@ -1,0 +1,28 @@
+# Virtual environments & dependencies
+.venv/
+venv/
+env/
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment secrets (never commit private keys or .env)
+.env
+*.pem
+*service-account*.json
+
+# Local runtime raster/database cache (re-generated via backend/scripts/bootstrap_real_data.py)
+# Note: All final figures, graphs, tables, GeoJSONs, and PDF reports in `research/` ARE tracked!
+data/
+
+# OS / Editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
