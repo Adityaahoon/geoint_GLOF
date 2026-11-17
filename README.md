@@ -1,4 +1,3 @@
-# GlacioGuard AI
 ### Historical-to-Present Geospatial Intelligence, Deep Learning and GLOF Susceptibility Assessment Platform for the Kedarnath Region, Uttarakhand, India (2000–2026)
 
 **GlacioGuard AI** is a full-stack scientific geospatial intelligence platform built for multi-decadal environmental monitoring (2000–2026 YTD), glacial lake detection, 2013 Kedarnath compound disaster impact analysis, GLOF susceptibility screening, DEM hydrological modelling, HEC-RAS 2D hydraulic scenario integration, and OpenStreetMap downstream exposure assessment across the **Kedarnath–Chorabari Glacier–Gandhi Sarovar–Mandakini River Basin**.
